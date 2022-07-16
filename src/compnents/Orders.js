@@ -11,7 +11,7 @@ function Orders() {
 
   useEffect(() => {
     const getorder = async () =>{
-      const response = await fetch("http://localhost:80/orders/getorder", {
+      const response = await fetch("https://amazonfake.herokuapp.com/orders/getorder", {
           method: "POST",
           headers: {
             "Content-Type": "application/json", 

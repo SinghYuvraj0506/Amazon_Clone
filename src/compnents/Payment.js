@@ -64,7 +64,7 @@ function Payment() {
       .then(async ({paymentIntent}) => {
         // paymentIntent = payment confirmation
 
-        const response = await fetch("http://localhost:80/orders/addorder", {
+        const response = await fetch("https://amazonfake.herokuapp.com/orders/addorder", {
           method: "POST",
           headers: {
             "Content-Type": "application/json", 
